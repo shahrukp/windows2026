@@ -15,7 +15,7 @@ public class LambdaExperssion {
 
                 return x-y;}
         };
-        return aa.doCalculation(100,120);
+        return aa.doCalculation(5000,120);
     }
     public int  doLambdaWork(){
         A a = (int x, int y) ->{
@@ -29,6 +29,20 @@ public class LambdaExperssion {
 
         return "String is Working!";
     } //Mathiyalagan
+
+
+
+    public String doSomething(){
+        String str ="hi this is for jenkins update only ?";
+
+        return "jenkins -> " +str;
+    }
+
+    public String doSomethings(){
+        String str ="hi this is for jenkins update only ?";
+
+        return "jenkins -> " +str;
+    }
 
 
 
