@@ -39,7 +39,7 @@ public class LambdaExperssion {
     }
 
     public String doSomethings(){
-        String str ="hi this is for jenkins update only ?";
+        String str ="hi this is for jenkins update only ? +s ";
 
         return "jenkins -> " +str;
     }

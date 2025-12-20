@@ -597,8 +597,6 @@ Set<Character> set=new HashSet<>() ;//use for remove duplicatae
             System.out.println("armostrong No   " +result);
         }
 
-
-
  //check give string and number is check Palindomr yes or not;
 
         //convert into string

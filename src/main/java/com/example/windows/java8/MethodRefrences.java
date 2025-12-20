@@ -42,9 +42,12 @@ public String callRandomMehtods() {
         BiFunction<Integer, Integer, Integer> functional = Mehtodref::doSubraction;
         int xx = functional.apply(12, 8);
         System.out.println("method refernces" + xx);
-        //  2 way
+
+
+        //  2 way nned to understand
         Mehtodref fun = Mehtodref::doSubraction;
         int re = fun.addvalues(12, 11);
+
         // calling static methos via lambda experssion
         int result = Mehtodref.doSubraction(22, 66);
 

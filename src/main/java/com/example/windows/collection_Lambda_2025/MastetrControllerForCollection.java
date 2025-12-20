@@ -19,7 +19,24 @@ public class MastetrControllerForCollection {
     LambdaExperssion lambdaExperssion;
 
     @Autowired(required = true)
+    Lmabda2 fun;
+
+    @Autowired(required = true)
+    AnnoymusFunctionn annymousFunc;
+
+    @Autowired(required = true)
+    MethodRefernce methodRefernce;
+
+    @Autowired(required = true)
+    FunctionalInterfacess functionalInterfacess;
+
+    @Autowired(required = true)
     CompartorVsComparableinterface compartorVsComparableinterface;
+
+
+    @Autowired(required = true)
+    DefaultMethods defaultMethods;
+
 
         @GetMapping("{methodName}")
         public Object invokeAnyMethod(
@@ -31,8 +48,8 @@ public class MastetrControllerForCollection {
 
                 // If no params, call no-arg method
                 if (params == null || params.length == 0) {
-                    Method method = lambdaExperssion.getClass().getDeclaredMethod(methodName);
-                    return method.invoke(lambdaExperssion);
+                    Method method = defaultMethods.getClass().getDeclaredMethod(methodName);
+                    return method.invoke(defaultMethods);
                 }
 
                 // Build parameter types (All are Strings because coming from request)
@@ -42,8 +59,8 @@ public class MastetrControllerForCollection {
                 }
 
                 // Find method with parameters
-                Method method = lambdaExperssion.getClass().getDeclaredMethod(methodName, paramTypes);
-                return method.invoke(lambdaExperssion, (Object[]) params);
+                Method method = defaultMethods.getClass().getDeclaredMethod(methodName, paramTypes);
+                return method.invoke(defaultMethods, (Object[]) params);
 
             } catch (Exception e) {
                 return "Error: " + e.getMessage();

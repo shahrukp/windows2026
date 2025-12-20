@@ -14,7 +14,8 @@ public class AllFunctionInterfaceDemo {
      //                   return_type      methods               Remembers(notes)                                        Extra Behaviours
 
      // supplier  ()->       void             get(T t)              did not take parametrs and prodcue the result           Supplier<String> // no extra paramerts required
-     // Consumer  () ->      void            accpet(T t)           take parameter and did not return result              Consumer<String> // no extra paramerts required
+     // Consumer  () ->      void
+     // (T t)           take parameter and did not return result              Consumer<String> // no extra paramerts required
     // BiConsumer () ->      void            accept(T t, T1 t2)    take 2 parameters and did not return  result         BiConsumer<String , Integer> // no extra paramerts required
     //predicate  ()->        boolean        test(T t)               take one input arguments                         Prdicate<String> // no extra paramerts required
     //biPredicate  ()->      boolean      Test(T t1, T t2)            takes two parametrs                                BiPredicate<String , Integer> // no extra paramerts required
@@ -61,7 +62,6 @@ public class AllFunctionInterfaceDemo {
             @Override
             public void accept(Integer s) {
                 System.out.println("even numbers are "  +s);
-
             }};
         int num=0;
         while(num <=10){
@@ -70,8 +70,6 @@ public class AllFunctionInterfaceDemo {
             }
             num++;
         }
-
-
         Consumer<String> consumer = s-> System.out.println(s);
         consumer.accept("shahruk pathan software engineer");
 
@@ -86,7 +84,7 @@ public class AllFunctionInterfaceDemo {
         Map<String , Integer> maps= Map.of("Java", 20000 ,"Python",16000, "anular" , 18000,
                 "Micorserivres", 55000 ,"HTML",3200, "NodJs" , 1300
         );
-        BiConsumer<String , Integer >biConsumer =new BiConsumer<String, Integer>() {
+        BiConsumer<String , Integer>biConsumer=new BiConsumer<String, Integer>() {
             @Override
             public void accept(String key, Integer value) {
                 System.out.println("outptu  between prince 15000 to 20000  " +
@@ -100,8 +98,6 @@ public class AllFunctionInterfaceDemo {
                 .forEach(entry ->biConsumer.accept(entry.getKey() ,entry.getValue() ) );
         return "key and value genrate "  +biConsumer; // hashcode
     }
-
-
     public String prediacteFilter(){
 
         String  mobilenumber="919673885160";
@@ -162,13 +158,10 @@ Predicate<Boolean> predicate=new Predicate<Boolean>() {
                 return func.apply(t); // outptu is 3
             }
         };
-
         Function<String, Integer> function = s->s.length();
         return   "funntional inteface " + fuc.apply("a") + // outotu is 3
                 "outptu " + function.apply("pathan") ; // output is 6
     }
-
-
     public String biFunctionDemo(){
     Map<Integer , Integer>  deatils=Map.of(20000, 110, 50000, 130, 2000, 101, 29022,115,
                 600, 118 , 7500, 112, 9484,1800);

@@ -1,10 +1,13 @@
 package com.example.windows.code.task;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+@Component
 public class FailFasts {
 // will throw the error like java.util.ConcurrentModificationException: null
 

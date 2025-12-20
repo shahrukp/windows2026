@@ -37,7 +37,6 @@ public class CallBothCompartorAndComparable {
          // by id(filter)
        Comparator<Compartoresss> byId =(s3,s4)-> Integer.compare(s4.id , s3.id);
 
-
        // filter whos salary is more then 80000 and department is IT print them only
      Stream<Compartoresss> results= list.stream()
                 .filter(r->
