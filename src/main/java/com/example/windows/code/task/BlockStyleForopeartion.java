@@ -73,10 +73,7 @@ public class BlockStyleForopeartion {
     // othe way
       Optional mx= findMax.stream()
                 .min(Comparator.comparingInt(Integer::intValue));
-      return "max is " +x  + "nad min " +mx.get();
-
-    }
-
+      return "max is " +x  + "nad min " +mx.get();}
     // conver int to string and string to int
 
     @GetMapping("convertor")

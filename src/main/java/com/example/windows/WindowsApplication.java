@@ -4,11 +4,13 @@ import com.example.windows.code.task.GapCalulation;
 import com.example.windows.controller.StreamAPI;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 @EnableJpaRepositories
+@ComponentScan(basePackages = "com.example.windows.springboot.annotation_2026")
 public class WindowsApplication {
 
 	public static void main(String[] args) {
@@ -31,10 +33,7 @@ public class WindowsApplication {
 		objRef.EachOccurenceList();
 
 		System.out.println("Run..!");
-
-
 		// check class loader
-
 
 	}
 

@@ -186,7 +186,6 @@ public class Paracites {
                     f1->f1,
                     Collectors.counting()));
     System.out.println("count 2 " +result);
-
     }
     @Test
     public void testApi(){
