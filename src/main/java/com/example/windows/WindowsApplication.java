@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 @EnableJpaRepositories
-@ComponentScan(basePackages = "com.example.windows.springboot.annotation_2026")
+//@ComponentScan(basePackages = "com.example.windows.springboot.annotation_2026")
+//@ComponentScan(basePackages = "com.example.windows") //Ye sab sub-packages scan karega:
 public class WindowsApplication {
 
 	public static void main(String[] args) {
