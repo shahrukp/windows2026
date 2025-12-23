@@ -17,14 +17,13 @@ import java.util.concurrent.ConcurrentMap;
 public class MapConcurrentMapConcurrentHashMap {
 
     // http://localhost:8084/map/concurrentmap/concurrenthashmap/map
-
     @GetMapping("/map")
     public Map<String, Integer> mapInterface() {
       //  Map<String, Integer> map = new HashMap<>(); option stiring and interger
         Map<String,Integer> map = new HashMap<>();
         map.put("tom", 21);
         map.put("jerry", 22);
-        map.put("tomm", 25);
+        map.put("tttt", 55);
         // map.put(null,21); // hold one null key
         map.put("jerrys", 22); // dupicate key not allowed
         return map;
