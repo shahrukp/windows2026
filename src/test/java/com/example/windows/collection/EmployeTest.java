@@ -3,6 +3,7 @@ package com.example.windows.collection;
 import com.example.windows.employee.impl.EmployeeImpl;
 import com.example.windows.employee.service.EmployeeInterface;
 import com.example.windows.entity.Employee;
+import com.example.windows.junit.TestMethods;
 import com.example.windows.repository.EmployeeRepo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -94,17 +95,12 @@ public class EmployeTest {
 //        // Expect exception or custom error handling
 //    }
 
-
+    TestMethods testMethods=new  TestMethods();
     @Test
-    public int  addvalues(int a, int b){
-        Assertions.assertEquals(10, a+b);
-        System.out.println("output is");
-             return addvalues(1,9);
-    }
-
-
-
-
-
-}
+    void   addvalues(){
+      int result=testMethods.addValue(12,8);
+    //  assertEquals(20,result);
+      Assertions.assertEquals(20,result);
+              System.out.println(result);
+}}
 

@@ -46,7 +46,7 @@ public String callRandomMehtods() {
 
         //  2 way nned to understand
         Mehtodref fun = Mehtodref::doSubraction;
-        int re = fun.addvalues(12, 11);
+        int re = fun.addvalues(12, 11); // 23
 
         // calling static methos via lambda experssion
         int result = Mehtodref.doSubraction(22, 66);
