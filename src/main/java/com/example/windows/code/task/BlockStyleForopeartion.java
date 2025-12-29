@@ -49,6 +49,8 @@ public class BlockStyleForopeartion {
     @GetMapping("predefine")
     public String PredefinedFunctionVariable(){
 
+        System.out.println("for =docker test.....");
+
       // notes Agar tumhe Function ka use karna hai → to map() ke sath hoga:
        // Agar tumhe filter ke sath use karna hai → to Predicate<Integer> lena hoga:
         Function<Integer,Integer> str=e->e*5;
@@ -97,6 +99,7 @@ int number=20;
 
 // get the root
         System.out.println("sqrt" +Math.sqrt(number));
+        System.out.println("for =docker test.....");
         String result="";
         boolean isPrime=true;
         // prime 1 and 2 id not prime
