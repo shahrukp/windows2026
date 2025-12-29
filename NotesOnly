@@ -1,0 +1,12 @@
+
+I have remove below configured from jenkins if required add letters
+Build Steps
+Automate your build process with ordered tasks like code compilation, testing, and deployment.
+Execute Windows batch command
+?
+
+Command
+See the list of available environment variables
+cd source
+mvn clean package -DskipTests
+
