@@ -10,3 +10,11 @@ See the list of available environment variables
 cd source
 mvn clean package -DskipTests
 
+..........................................
+Execute Windows batch command
+?
+
+Command
+See the list of available environment variables
+cd source\target
+java -jar windows-0.0.1-SNAPSHOT.jar
